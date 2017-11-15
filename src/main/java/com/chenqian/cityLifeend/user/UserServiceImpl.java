@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User getUserByName(String username) {
-        return userJpaDao.findByName(username);
+        return userJpaDao.findAll().get(0);
     }
 
     @Override
