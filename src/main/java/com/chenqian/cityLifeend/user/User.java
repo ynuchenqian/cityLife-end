@@ -16,13 +16,16 @@ public class User {
     @Id
     @GeneratedValue
     private Float id;
+    //姓名
     @Column(name = "name")
     private String name;
+    //密码
     @Column(name = "password")
     private String password;
+    //用户名
     @Column(name = "username")
     private String username;
-
+    //电子邮件
     private String email;
 
     public String getName() {

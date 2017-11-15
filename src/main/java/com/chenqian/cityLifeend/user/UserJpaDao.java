@@ -11,12 +11,13 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface UserJpaDao extends JpaRepository<User, Long> {
 
     /**
-     * Find by name.
      *
+     *  根据姓名查询用户信息
      * @param name the name
      * @return the user
      */
     User findByName(String name);
+
 
 
 }
